@@ -1,14 +1,15 @@
 name: python-lint
 on:
   push:
-    branches: 
-      - main
+    branches:
+      - "main"
     paths:
-      - {{ cookiecutter.project_slug }}
+      - '**.py'
   pull_request:
-    branches: [ main ]
+    branches: 
+      - "main"
     paths:
-      - {{ cookiecutter.project_slug }}
+      - '**.py'
 jobs:
   pylint:
     name: lint
