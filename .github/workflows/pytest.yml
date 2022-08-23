@@ -2,15 +2,15 @@ name: cookiecutter_pypackage tests
 
 on:
   push:
-    branches: 
+    branches:
       - main
-    paths:
-      - '**.py'
+    # paths:
+    #   - '**.py'
   pull_request:
     branches:
       - main
-    paths:
-      - '**.py'
+    # paths:
+    #   - '**.py'
 
 jobs:
   test:
