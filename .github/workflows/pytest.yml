@@ -20,7 +20,7 @@ jobs:
     - uses: actions/checkout@v2
     - name: Install dependencies
       run: |
-        pip install -e ".[test]"
+        pip install -r requirements_dev.txt
     - name: Run tests with Pytest
       run: |
         python -m pytest tests
