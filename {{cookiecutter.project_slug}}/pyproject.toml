@@ -1,3 +1,7 @@
+[build-system]
+requires = ["setuptools >= 40.6.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
 [tool.black]
 line-length=120
 include = '\.pyi?$'
@@ -42,6 +46,7 @@ ignore = [
     "E402", # Module level import not at top of file.
     "E501",  # line too long, handled by black
     "E712", # Comparison to True should be 'if cond is True:' or 'if cond:'
+    "E741", # ambiguous variable name
     "C901",  # too complex
 ]
 
